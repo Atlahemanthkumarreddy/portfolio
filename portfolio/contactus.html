@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us</title>
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<div class="main-navbar" id="maindiv">
+  <h1 class="logo">Atla Hemanth Kumar Reddy</h1>
+  <nav class="navbar">
+    <a href="portfolio.html">Home</a><span class="blue">|</span>
+    <a href="aboutme.html">About Me</a><span class="orange">|</span>
+    <a href="projects.html">Projects</a><span class="lightyellow">|</span>
+    <a href="contactus.html" class="active">Contact Us</a>
+  </nav>
+</div>
+
+<main>
+  <section id="section1">
+    <!-- Left section empty -->
+  </section>
+
+  <section id="section2">
+    <h1>Contact Me</h1>
+
+    <h2>Email</h2>
+    <p>atlahemanth009@gmail.com</p>
+
+    <h2>Phone</h2>
+    <p>+91 6304507871</p>
+
+    <h2>Connect with Me</h2>
+    <ul>
+      <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+      <li><a href="https://x.com/" target="_blank">X (Twitter)</a></li>
+    </ul>
+
+    <h2>Send a Message</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Your Name" class="form-input" required><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Your Email" class="form-input" required><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" placeholder="Your Message" rows="6" class="form-input" required></textarea><br>
+      
+      <button type="submit" class="form-button">Send</button>
+    </form>
+
+    <p id="successMessage" style="color: green; margin-top: 10px; display: none;">Message sent successfully!</p>
+
+  </section>
+</main>
+
+<footer>
+   <div class="footer-icons">
+    <!-- Facebook (white) -->
+    <a href="https://www.facebook.com/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" 
+           alt="facebook" class="f-logo facebook">
+    </a>
+
+    <!-- Google (white) -->
+    <a href="https://www.google.co.in/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" 
+           alt="google" class="f-logo">
+    </a>
+    <!-- Twitter/X (white) -->
+    <a href="https://x.com/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" 
+           alt="twitter" class="f-logo">
+    </a>
+    <!-- GitHub (white) -->
+    <a href="https://github.com/" target="_blank">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+     alt="GitHub" class="f-logo">
+    </a>
+  </div>
+</footer>
+<div class="footer-text" style="background-color: rgb(29, 28, 28);color: white;text-align: center;margin-top: 1px;">
+  © 2026 Hemanth Kumar Reddy
+</div>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const successMsg = document.getElementById('successMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent page reload
+    successMsg.style.display = 'block'; // show success message
+    form.reset(); // clear form fields
+  });
+</script>
+
+</body>
+</html>
